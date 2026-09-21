@@ -1,0 +1,54 @@
+{
+    "name": "elazaroo/pulse-sqlsrv",
+    "description": "SQL Server storage driver for Laravel Pulse.",
+    "keywords": [
+        "laravel",
+        "pulse",
+        "sqlsrv",
+        "sql-server",
+        "monitoring"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "elazaroo",
+            "email": "enekolazaroalba@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "illuminate/database": "^10.48.4|^11.0.8|^12.0|^13.0",
+        "illuminate/support": "^10.48.4|^11.0.8|^12.0|^13.0",
+        "laravel/pulse": "^1.8"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.0",
+        "orchestra/testbench": "^8.0|^9.0|^10.0|^11.0",
+        "pestphp/pest": "^2.0|^3.0|^4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Elazaroo\\PulseSqlsrv\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Elazaroo\\PulseSqlsrv\\PulseSqlsrvServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        },
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
