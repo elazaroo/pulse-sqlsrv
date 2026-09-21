@@ -15,7 +15,7 @@ It is a drop-in add-on, not a fork: you install Pulse as usual and this package 
 ## Requirements
 
 - PHP 8.1+
-- Laravel Pulse 1.8+
+- Laravel Pulse 1.8+ (tested against Laravel 12 and 13)
 - SQL Server 2019 or later (including Azure SQL Database), with the `pdo_sqlsrv` extension
 
 ## Installation
